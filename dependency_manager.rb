@@ -23,7 +23,7 @@ def check_plugins(dependencies)
 			puts "\033[33m" << " - Missing '#{dependency}'!" << "\e[0m"
 			if not system "vagrant plugin install #{dependency}"
 				puts "\n\033[33m" << " - Could not install plugin '#{dependency}'. " << "\e[0m\033[41m" <<"Stopped." << "\e[0m"
-				exit
+				exit -1
 			end
 
 			if no_missing == nil
