@@ -2,7 +2,7 @@
 # @Author: Dev_NIX
 # @Date:   2016-03-07 14:24:11
 # @Last Modified by:   Dev_NIX
-# @Last Modified time: 2016-03-07 16:06:55
+# @Last Modified time: 2016-03-07 16:36:38
 
 def check_plugins(dependencies)
 	installed_dependencies = []
@@ -13,7 +13,12 @@ def check_plugins(dependencies)
 	raw_list = raw_output.split("\n")
 
 	raw_list.each do |plugin| 
-		installed_dependencies.push plugin.slice((plugin.index("\e[0m")+4)..(plugin.index("(")-1)).strip
+		if plugin.index("\e[0m") != nil
+			first = plugin.index("\e[0m")  + 4
+		else
+			first = 0
+		end
+		installed_dependencies.push plugin.slice((first)..(plugin.index("(")-1)).strip
 	end
 
 	no_missing = false
