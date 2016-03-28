@@ -19,7 +19,7 @@ Include `dependency_manager.rb` in your Vagrantfile and call the function `check
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-require "./dependency_manager"
+require File.dirname(__FILE__)+"./dependency_manager"
 
 check_plugins ["vagrant-exec", "vagrant-hostsupdater", "vagrant-cachier", "vagrant-triggers"]
 
