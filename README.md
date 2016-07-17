@@ -1,6 +1,7 @@
 # Vagrant dependency manager
 
 [![Join the chat at https://gitter.im/DevNIX/Vagrant-dependency-manager](https://badges.gitter.im/DevNIX/Vagrant-dependency-manager.svg)](https://gitter.im/DevNIX/Vagrant-dependency-manager?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Simple snippet that allows you to define a list of plugins in your Vagrantfile, and manage them as dependencies.
 
 I am not a Ruby programmer (yet) and this is a young software, so any issues and pull requests are always welcome! 
