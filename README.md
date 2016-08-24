@@ -32,3 +32,20 @@ Vagrant.configure(2) do |config|
 
 end
 ```
+
+### Invoking
+
+Just `vagrant up` or `vagrant reload` as usual!
+
+_**Danger:** this is so easy to use that you could forget that you are checking for missing dependencies every time you bootstrap your machine :D_
+
+#### Bypass the dependency manager
+
+You might want to skip the dependency manager proccess that runs just before Vagrant. If it's your case, you can up your Vagrant machine as always with the `--skip-dependency-manager`` parameter before the Vagrant command.
+
+Example:
+```
+vagrant --skip-dependency-manager up
+```
+
+_Remember: if you type the vagrant command before the `--skip-dependency-manager` paramter you will get an error because Vagrant tries to run an invalid option_
