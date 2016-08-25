@@ -1,6 +1,6 @@
 # Vagrant dependency manager
 
-[![Project Stats](https://www.openhub.net/p/Vagrant-dependency-manager/widgets/project_thin_badge.gif)](https://www.openhub.net/p/Vagrant-dependency-manager) [![Join the chat at https://gitter.im/DevNIX/Vagrant-dependency-manager](https://badges.gitter.im/DevNIX/Vagrant-dependency-manager.svg)](https://gitter.im/DevNIX/Vagrant-dependency-manager?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Join the chat at https://gitter.im/DevNIX/Vagrant-dependency-manager](https://badges.gitter.im/DevNIX/Vagrant-dependency-manager.svg)](https://gitter.im/DevNIX/Vagrant-dependency-manager?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![Project Stats](https://www.openhub.net/p/Vagrant-dependency-manager/widgets/project_thin_badge.gif)](https://www.openhub.net/p/Vagrant-dependency-manager)
 
 
 Simple snippet that allows you to define a list of plugins in your Vagrantfile, and manage them as dependencies.
