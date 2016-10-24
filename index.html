@@ -22,6 +22,8 @@
       <h1>
 <a id="vagrant-dependency-manager" class="anchor" href="#vagrant-dependency-manager" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Vagrant dependency manager</h1>
 
+<p><a href="http://isitmaintained.com/project/DevNIX/Vagrant-dependency-manager" title="Average time to resolve an issue"><img src="http://isitmaintained.com/badge/resolution/DevNIX/Vagrant-dependency-manager.svg" alt="Average time to resolve an issue"></a> <a href="http://isitmaintained.com/project/DevNIX/Vagrant-dependency-manager" title="Percentage of issues still open"><img src="http://isitmaintained.com/badge/open/DevNIX/Vagrant-dependency-manager.svg" alt="Percentage of issues still open"></a> <a href="https://gitter.im/DevNIX/Vagrant-dependency-manager?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img src="https://badges.gitter.im/DevNIX/Vagrant-dependency-manager.svg" alt="Join the chat at https://gitter.im/DevNIX/Vagrant-dependency-manager"></a> <a href="https://www.openhub.net/p/Vagrant-dependency-manager"><img src="https://www.openhub.net/p/Vagrant-dependency-manager/widgets/project_thin_badge.gif" alt="Project Stats"></a></p>
+
 <p>Simple snippet that allows you to define a list of plugins in your Vagrantfile, and manage them as dependencies.</p>
 
 <p>I am not a Ruby programmer (yet) and this is a young software, so any issues and pull requests are always welcome! </p>
@@ -53,6 +55,25 @@ check_plugins [<span class="pl-s"><span class="pl-pds">"</span>vagrant-exec<span
   config.vm.box <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>base<span class="pl-pds">"</span></span>
 
 <span class="pl-k">end</span></pre></div>
+
+<h3>
+<a id="invoking" class="anchor" href="#invoking" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Invoking</h3>
+
+<p>Just <code>vagrant up</code> or <code>vagrant reload</code> as usual!</p>
+
+<p><em><strong>Danger:</strong> this is so easy to use that you could forget that you are checking for missing dependencies every time you bootstrap your machine :D</em></p>
+
+<h4>
+<a id="bypass-the-dependency-manager" class="anchor" href="#bypass-the-dependency-manager" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Bypass the dependency manager</h4>
+
+<p>You might want to skip the dependency manager proccess that runs just before Vagrant. If it's your case, you can up your Vagrant machine as always with the <code>--skip-dependency-manager</code>` parameter before the Vagrant command.</p>
+
+<p>Example:</p>
+
+<pre><code>vagrant --skip-dependency-manager up
+</code></pre>
+
+<p><em>Remember: if you type the vagrant command before the <code>--skip-dependency-manager</code> paramter you will get an error because Vagrant tries to run an invalid option</em></p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/DevNIX/Vagrant-dependency-manager">Vagrant-dependency-manager</a> is maintained by <a href="https://github.com/DevNIX">DevNIX</a>.</span>
