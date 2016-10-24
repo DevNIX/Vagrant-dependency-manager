@@ -6,16 +6,12 @@ require 'getoptlong'
 def check_plugins(dependencies)
 	skip_dependency_manager = false
 
-	opts = GetoptLong.new(
-	  [ '--skip-dependency-manager', GetoptLong::OPTIONAL_ARGUMENT ]
-	)
-
-	opts.each do |opt, arg|
-	  	case opt
-	    	when '--skip-dependency-manager'
-	      		skip_dependency_manager = true
-	  	end
-	end
+    ARGV.each_with_index do |value, index|
+        case value
+            when '--skip-dependency-manager'
+                skip_dependency_manager = true
+        end
+    end
 
 	if ['up', 'reload'].include?(ARGV[0]) && !skip_dependency_manager
 		installed_dependencies = []
