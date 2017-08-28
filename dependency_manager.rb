@@ -27,7 +27,7 @@ def check_plugins(dependencies)
 			else
 				first = 0
 			end
-			installed_dependencies.push plugin.slice((first)..(plugin.index("(")-1)).strip
+			installed_dependencies.push plugin.slice((first)..(plugin.index("(").to_i-1)).strip
 		end
 
 		dependencies_already_satisfied = true
