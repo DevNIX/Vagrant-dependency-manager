@@ -1,6 +1,10 @@
 # Vagrant dependency manager
 
-[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/DevNIX/Vagrant-dependency-manager.svg)](http://isitmaintained.com/project/DevNIX/Vagrant-dependency-manager "Average time to resolve an issue") [![Percentage of issues still open](http://isitmaintained.com/badge/open/DevNIX/Vagrant-dependency-manager.svg)](http://isitmaintained.com/project/DevNIX/Vagrant-dependency-manager "Percentage of issues still open") [![Join the chat at https://gitter.im/DevNIX/Vagrant-dependency-manager](https://badges.gitter.im/DevNIX/Vagrant-dependency-manager.svg)](https://gitter.im/DevNIX/Vagrant-dependency-manager?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![Project Stats](https://www.openhub.net/p/Vagrant-dependency-manager/widgets/project_thin_badge.gif)](https://www.openhub.net/p/Vagrant-dependency-manager)
+Is it maintained? Check it by yourself!
+
+[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/DevNIX/Vagrant-dependency-manager.svg)](http://isitmaintained.com/project/DevNIX/Vagrant-dependency-manager "Average time to resolve an issue") [![Percentage of issues still open](http://isitmaintained.com/badge/open/DevNIX/Vagrant-dependency-manager.svg)](http://isitmaintained.com/project/DevNIX/Vagrant-dependency-manager "Percentage of issues still open")
+
+[![Join the chat at https://gitter.im/DevNIX/Vagrant-dependency-manager](https://badges.gitter.im/DevNIX/Vagrant-dependency-manager.svg)](https://gitter.im/DevNIX/Vagrant-dependency-manager?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![Project Stats](https://www.openhub.net/p/Vagrant-dependency-manager/widgets/project_thin_badge.gif)](https://www.openhub.net/p/Vagrant-dependency-manager)
 
 
 Simple snippet that allows you to define a list of plugins in your Vagrantfile, and manage them as dependencies.
