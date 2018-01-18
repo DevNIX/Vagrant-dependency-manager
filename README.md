@@ -46,7 +46,7 @@ _**Danger:** this is so easy to use that you could forget that you are checking 
 
 #### Bypass the dependency manager
 
-You might want to skip the dependency manager proccess that runs just before Vagrant. If it's your case, you can up your Vagrant machine as always with the `--skip-dependency-manager`` parameter before the Vagrant command.
+You might want to skip the dependency manager proccess that runs just before Vagrant. If it's your case, you can up your Vagrant machine as always with the `--skip-dependency-manager` parameter before the Vagrant command.
 
 Example:
 ```
